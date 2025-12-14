@@ -1,0 +1,501 @@
+patient_id,age_group,heart_rate,resp_rate,blood_pressure_systolic,blood_pressure_diastolic,spo2,temperature_c,glucose_mgdl,label_status,probable_condition
+1,Child,106,29,136,61,85,36.9,74,Critical,Not Healthy
+2,Adult,112,12,113,74,96,37.7,150,Warning,Not Healthy
+3,Adult,134,20,115,62,96,38.0,180,Warning,Not Healthy
+4,Infant,119,26,115,70,90,39.0,96,Critical,Not Healthy
+5,Infant,87,24,110,68,95,37.0,101,Normal,Healthy
+6,Adolescent,104,12,134,86,88,37.0,79,Critical,Not Healthy
+7,Child,142,11,125,81,94,36.4,167,Critical,Not Healthy
+8,Infant,76,27,114,66,89,38.2,143,Critical,Not Healthy
+9,Adolescent,72,21,104,60,87,36.8,106,Critical,Not Healthy
+10,Adolescent,149,19,125,66,94,35.7,138,Critical,Not Healthy
+11,Child,62,27,134,73,88,36.0,121,Critical,Not Healthy
+12,Child,121,21,101,89,95,37.3,134,Warning,Not Healthy
+13,Adult,82,23,118,79,96,35.8,96,Warning,Not Healthy
+14,Adult,123,17,100,65,91,37.3,173,Warning,Not Healthy
+15,Adolescent,134,17,112,78,93,36.4,138,Warning,Not Healthy
+16,Elderly,102,12,100,83,97,37.8,101,Warning,Not Healthy
+17,Child,145,11,122,90,93,38.4,118,Critical,Not Healthy
+18,Adult,68,11,106,72,94,38.4,116,Critical,Not Healthy
+19,Child,92,13,98,87,100,38.4,71,Critical,Not Healthy
+20,Child,84,15,134,63,94,35.2,167,Warning,Not Healthy
+21,Infant,135,20,95,63,98,38.0,104,Warning,Not Healthy
+22,Adult,55,23,123,60,100,36.5,62,Warning,Not Healthy
+23,Child,115,30,124,61,97,36.2,61,Warning,Not Healthy
+24,Adult,65,28,112,62,92,38.3,132,Critical,Not Healthy
+25,Child,64,28,119,64,100,36.6,91,Warning,Not Healthy
+26,Elderly,69,28,129,69,89,35.3,66,Critical,Not Healthy
+27,Adolescent,105,16,97,84,88,36.5,83,Critical,Not Healthy
+28,Infant,141,27,121,90,90,35.6,103,Critical,Not Healthy
+29,Child,75,11,140,81,91,35.0,122,Warning,Not Healthy
+30,Adult,104,11,106,70,93,35.9,159,Warning,Not Healthy
+31,Infant,155,25,123,61,98,35.7,140,Critical,Not Healthy
+32,Adult,98,23,117,82,97,38.2,148,Critical,Not Healthy
+33,Child,108,17,109,84,95,38.2,164,Critical,Not Healthy
+34,Child,73,13,137,76,94,35.0,91,Warning,Not Healthy
+35,Elderly,147,22,114,69,90,37.2,132,Critical,Not Healthy
+36,Adult,63,21,123,89,86,35.1,87,Critical,Not Healthy
+37,Adult,65,20,111,62,90,35.1,132,Warning,Not Healthy
+38,Adolescent,69,28,113,81,94,37.7,63,Warning,Not Healthy
+39,Child,108,25,113,61,99,38.5,100,Critical,Not Healthy
+40,Adolescent,117,11,105,76,88,38.1,124,Critical,Not Healthy
+41,Adolescent,58,26,138,87,98,38.7,138,Critical,Not Healthy
+42,Infant,102,18,126,85,88,38.4,61,Critical,Not Healthy
+43,Infant,157,29,132,86,99,38.6,61,Critical,Not Healthy
+44,Adolescent,97,16,111,69,91,36.6,131,Warning,Not Healthy
+45,Elderly,69,22,134,60,97,36.4,151,Warning,Not Healthy
+46,Elderly,96,12,125,84,86,38.2,92,Critical,Not Healthy
+47,Adult,91,30,118,61,86,36.7,165,Critical,Not Healthy
+48,Adult,121,18,107,68,96,38.9,176,Critical,Not Healthy
+49,Elderly,143,14,97,81,91,35.6,102,Critical,Not Healthy
+50,Infant,72,18,96,85,95,38.2,82,Critical,Not Healthy
+51,Adult,58,10,95,75,92,37.7,134,Warning,Not Healthy
+52,Child,93,21,105,88,90,35.2,139,Warning,Not Healthy
+53,Elderly,118,11,120,90,96,36.7,114,Warning,Not Healthy
+54,Elderly,115,11,126,90,87,35.5,107,Critical,Not Healthy
+55,Infant,66,23,128,76,97,38.4,109,Critical,Not Healthy
+56,Elderly,90,27,118,64,89,39.0,71,Critical,Not Healthy
+57,Adolescent,69,12,102,69,86,37.9,127,Critical,Not Healthy
+58,Infant,86,23,114,87,98,36.8,159,Warning,Not Healthy
+59,Infant,88,25,99,74,85,38.5,163,Critical,Not Healthy
+60,Adult,145,27,105,73,99,35.5,132,Critical,Not Healthy
+61,Child,57,15,115,86,99,35.3,119,Warning,Not Healthy
+62,Elderly,114,10,132,61,95,36.6,90,Warning,Not Healthy
+63,Adolescent,101,27,128,73,88,35.8,125,Critical,Not Healthy
+64,Child,103,30,112,60,96,36.3,118,Warning,Not Healthy
+65,Elderly,151,10,127,77,85,38.7,160,Critical,Not Healthy
+66,Elderly,89,13,122,71,98,38.0,109,Warning,Not Healthy
+67,Elderly,131,17,122,79,89,37.3,179,Critical,Not Healthy
+68,Adult,75,12,94,86,98,37.9,137,Warning,Not Healthy
+69,Elderly,132,10,105,86,88,38.9,130,Critical,Not Healthy
+70,Adolescent,76,13,138,88,90,35.8,170,Warning,Not Healthy
+71,Child,97,15,127,65,85,38.7,62,Critical,Not Healthy
+72,Adolescent,154,28,113,75,92,38.1,75,Critical,Not Healthy
+73,Adolescent,94,17,114,88,95,35.6,149,Warning,Not Healthy
+74,Adolescent,62,19,108,77,98,36.9,82,Normal,Healthy
+75,Elderly,80,24,106,84,89,36.2,163,Critical,Not Healthy
+76,Adolescent,153,24,101,87,90,36.6,74,Critical,Not Healthy
+77,Child,144,23,130,68,94,36.9,113,Critical,Not Healthy
+78,Infant,146,19,127,89,100,35.4,110,Critical,Not Healthy
+79,Infant,104,16,140,66,88,38.6,128,Critical,Not Healthy
+80,Adult,130,10,111,78,87,38.7,84,Critical,Not Healthy
+81,Child,98,27,96,82,91,37.6,82,Warning,Not Healthy
+82,Elderly,109,24,138,75,86,37.9,169,Critical,Not Healthy
+83,Elderly,88,30,104,88,91,35.6,138,Warning,Not Healthy
+84,Adult,80,13,131,85,89,37.5,104,Critical,Not Healthy
+85,Adult,81,18,130,69,90,38.5,121,Critical,Not Healthy
+86,Elderly,67,30,91,84,98,37.4,66,Warning,Not Healthy
+87,Infant,120,16,137,85,87,37.6,143,Critical,Not Healthy
+88,Child,126,10,112,85,85,39.0,150,Critical,Not Healthy
+89,Adult,132,22,112,74,93,38.6,143,Critical,Not Healthy
+90,Infant,158,18,115,62,95,36.8,133,Critical,Not Healthy
+91,Adult,149,21,131,62,93,37.8,77,Critical,Not Healthy
+92,Infant,108,19,118,63,98,36.1,122,Normal,Healthy
+93,Child,123,17,139,65,90,39.0,87,Critical,Not Healthy
+94,Child,113,22,106,67,89,38.9,99,Critical,Not Healthy
+95,Infant,85,16,133,89,95,36.3,157,Warning,Not Healthy
+96,Elderly,55,11,133,88,85,36.5,75,Critical,Not Healthy
+97,Child,72,21,134,66,91,36.3,79,Warning,Not Healthy
+98,Infant,115,17,94,89,91,37.1,82,Warning,Not Healthy
+99,Elderly,130,26,137,64,90,36.4,105,Warning,Not Healthy
+100,Adult,60,11,131,79,99,38.8,146,Critical,Not Healthy
+101,Adolescent,133,17,137,69,97,37.4,141,Warning,Not Healthy
+102,Child,138,16,93,62,97,37.2,103,Warning,Not Healthy
+103,Adult,132,21,128,83,95,37.2,60,Warning,Not Healthy
+104,Adolescent,135,26,109,73,99,35.4,165,Warning,Not Healthy
+105,Adult,160,29,139,64,100,36.7,174,Critical,Not Healthy
+106,Adult,108,21,133,83,96,38.6,129,Critical,Not Healthy
+107,Adult,102,25,122,70,94,37.3,127,Warning,Not Healthy
+108,Child,109,10,122,78,87,36.7,169,Critical,Not Healthy
+109,Elderly,158,25,136,68,99,38.4,160,Critical,Not Healthy
+110,Adult,86,17,117,83,93,38.8,129,Critical,Not Healthy
+111,Adult,130,26,121,74,93,38.5,73,Critical,Not Healthy
+112,Elderly,141,14,116,70,89,37.4,146,Critical,Not Healthy
+113,Adolescent,69,25,115,67,85,37.4,113,Critical,Not Healthy
+114,Infant,98,17,103,89,86,36.6,146,Critical,Not Healthy
+115,Adolescent,140,12,93,90,93,38.7,177,Critical,Not Healthy
+116,Elderly,106,19,94,90,96,35.1,61,Warning,Not Healthy
+117,Infant,59,16,120,80,98,35.8,77,Warning,Not Healthy
+118,Adult,83,16,102,72,98,37.3,117,Warning,Not Healthy
+119,Elderly,68,30,115,85,86,36.6,97,Critical,Not Healthy
+120,Child,115,29,137,60,86,38.8,108,Critical,Not Healthy
+121,Infant,100,29,138,61,86,38.4,124,Critical,Not Healthy
+122,Child,121,12,124,88,95,37.8,136,Warning,Not Healthy
+123,Elderly,110,19,139,86,96,37.4,165,Warning,Not Healthy
+124,Child,118,30,98,70,93,38.2,112,Critical,Not Healthy
+125,Child,135,22,125,77,98,35.8,125,Warning,Not Healthy
+126,Adolescent,51,12,115,90,95,37.9,136,Warning,Not Healthy
+127,Elderly,68,22,139,78,90,37.2,78,Warning,Not Healthy
+128,Child,131,13,114,85,98,38.0,137,Warning,Not Healthy
+129,Elderly,120,18,126,75,94,35.5,60,Warning,Not Healthy
+130,Child,117,23,109,64,97,38.5,141,Critical,Not Healthy
+131,Infant,154,24,139,84,97,38.7,65,Critical,Not Healthy
+132,Infant,107,22,126,88,95,36.0,109,Warning,Not Healthy
+133,Child,82,23,109,68,87,36.3,101,Critical,Not Healthy
+134,Adult,114,12,116,85,93,36.0,150,Warning,Not Healthy
+135,Child,108,20,94,66,86,37.5,176,Critical,Not Healthy
+136,Elderly,124,18,136,85,90,38.3,63,Critical,Not Healthy
+137,Child,65,18,91,82,99,38.4,170,Critical,Not Healthy
+138,Adolescent,146,27,115,74,86,37.8,171,Critical,Not Healthy
+139,Elderly,133,16,133,86,89,37.6,159,Critical,Not Healthy
+140,Adolescent,78,27,102,75,87,35.3,108,Critical,Not Healthy
+141,Elderly,151,24,140,80,96,38.2,141,Critical,Not Healthy
+142,Infant,151,15,101,72,97,38.7,69,Critical,Not Healthy
+143,Child,95,28,101,73,87,35.1,81,Critical,Not Healthy
+144,Infant,95,23,139,87,89,35.6,166,Critical,Not Healthy
+145,Adolescent,143,27,118,81,85,35.8,73,Critical,Not Healthy
+146,Infant,71,21,104,63,99,35.6,91,Warning,Not Healthy
+147,Adult,88,28,128,72,100,36.7,116,Warning,Not Healthy
+148,Infant,155,29,98,76,95,38.9,168,Critical,Not Healthy
+149,Adolescent,117,13,124,75,86,37.1,145,Critical,Not Healthy
+150,Infant,134,13,107,78,93,35.5,114,Warning,Not Healthy
+151,Adult,109,27,137,90,97,37.1,118,Warning,Not Healthy
+152,Infant,153,10,91,76,96,37.9,106,Critical,Not Healthy
+153,Elderly,85,14,131,78,90,37.8,167,Warning,Not Healthy
+154,Child,129,27,96,78,85,35.1,125,Critical,Not Healthy
+155,Adolescent,149,25,140,78,91,36.8,74,Critical,Not Healthy
+156,Adult,155,24,90,80,89,35.4,170,Critical,Not Healthy
+157,Child,142,10,139,61,87,36.2,113,Critical,Not Healthy
+158,Infant,144,12,112,81,86,37.5,100,Critical,Not Healthy
+159,Adolescent,58,22,112,66,87,36.7,113,Critical,Not Healthy
+160,Infant,79,28,107,85,94,36.6,85,Warning,Not Healthy
+161,Child,150,25,128,89,89,36.7,125,Critical,Not Healthy
+162,Infant,122,28,110,84,93,38.6,154,Critical,Not Healthy
+163,Elderly,64,13,133,85,94,38.0,74,Warning,Not Healthy
+164,Child,114,20,113,90,89,35.6,68,Critical,Not Healthy
+165,Adult,85,15,138,83,85,37.2,135,Critical,Not Healthy
+166,Elderly,150,20,118,76,91,38.2,121,Critical,Not Healthy
+167,Child,152,10,102,84,92,35.4,67,Critical,Not Healthy
+168,Infant,78,27,121,74,94,38.4,95,Critical,Not Healthy
+169,Elderly,74,20,118,75,92,38.8,178,Critical,Not Healthy
+170,Child,114,16,112,77,86,35.3,120,Critical,Not Healthy
+171,Child,144,13,115,65,93,35.4,60,Critical,Not Healthy
+172,Infant,149,18,120,67,85,38.2,179,Critical,Not Healthy
+173,Child,101,11,135,78,95,37.2,109,Warning,Not Healthy
+174,Elderly,114,30,113,89,85,38.0,83,Critical,Not Healthy
+175,Elderly,82,19,94,66,98,35.8,170,Warning,Not Healthy
+176,Elderly,138,21,132,81,98,35.2,111,Warning,Not Healthy
+177,Infant,151,15,112,88,97,35.9,156,Critical,Not Healthy
+178,Elderly,70,16,112,72,90,35.6,112,Warning,Not Healthy
+179,Adult,112,13,129,86,90,37.8,158,Warning,Not Healthy
+180,Elderly,104,14,109,64,99,37.1,137,Warning,Not Healthy
+181,Adult,157,16,90,65,86,36.6,128,Critical,Not Healthy
+182,Infant,90,20,129,89,91,35.9,74,Warning,Not Healthy
+183,Elderly,76,14,122,72,91,38.9,111,Critical,Not Healthy
+184,Elderly,50,17,138,90,87,35.1,62,Critical,Not Healthy
+185,Adult,76,19,113,90,86,38.7,166,Critical,Not Healthy
+186,Adolescent,136,28,127,67,100,37.0,64,Warning,Not Healthy
+187,Child,58,15,103,79,86,36.9,166,Critical,Not Healthy
+188,Adolescent,100,25,118,85,96,39.0,101,Critical,Not Healthy
+189,Child,62,26,90,79,92,36.7,131,Warning,Not Healthy
+190,Infant,62,17,102,66,89,35.8,103,Critical,Not Healthy
+191,Child,57,12,136,68,94,38.5,161,Critical,Not Healthy
+192,Adult,146,23,96,64,97,38.2,74,Critical,Not Healthy
+193,Child,159,30,115,83,90,37.0,149,Critical,Not Healthy
+194,Adult,150,18,135,73,99,38.1,157,Critical,Not Healthy
+195,Elderly,61,16,99,71,88,38.0,94,Critical,Not Healthy
+196,Adult,50,24,115,60,89,36.8,177,Critical,Not Healthy
+197,Infant,83,19,107,78,97,36.0,70,Warning,Not Healthy
+198,Adolescent,131,14,117,79,87,36.4,120,Critical,Not Healthy
+199,Infant,71,24,118,76,100,38.7,129,Critical,Not Healthy
+200,Elderly,160,22,97,80,96,37.1,168,Critical,Not Healthy
+201,Adolescent,144,17,124,74,87,36.9,71,Critical,Not Healthy
+202,Adult,113,29,121,77,85,37.7,114,Critical,Not Healthy
+203,Adolescent,101,13,131,82,100,36.2,125,Normal,Healthy
+204,Child,134,27,107,76,99,36.0,81,Warning,Not Healthy
+205,Child,71,23,139,64,96,36.3,119,Normal,Healthy
+206,Adult,85,22,107,84,89,38.7,164,Critical,Not Healthy
+207,Child,75,27,92,76,88,36.7,101,Critical,Not Healthy
+208,Child,132,20,102,68,87,36.9,101,Critical,Not Healthy
+209,Elderly,159,23,116,71,93,37.0,150,Critical,Not Healthy
+210,Infant,135,23,124,63,85,38.4,122,Critical,Not Healthy
+211,Elderly,90,17,137,78,91,36.3,76,Warning,Not Healthy
+212,Adolescent,148,19,134,73,96,36.1,159,Critical,Not Healthy
+213,Elderly,158,18,117,86,97,38.8,87,Critical,Not Healthy
+214,Adolescent,149,23,127,90,89,35.9,93,Critical,Not Healthy
+215,Elderly,109,26,107,64,100,36.1,157,Warning,Not Healthy
+216,Child,76,30,109,83,94,36.9,120,Warning,Not Healthy
+217,Child,59,22,127,71,94,37.3,150,Warning,Not Healthy
+218,Adult,158,26,96,65,95,37.4,144,Critical,Not Healthy
+219,Elderly,139,19,99,63,88,38.5,130,Critical,Not Healthy
+220,Child,101,20,104,72,98,37.2,112,Normal,Healthy
+221,Adult,128,13,110,86,100,37.5,85,Warning,Not Healthy
+222,Elderly,81,10,103,66,99,35.8,79,Warning,Not Healthy
+223,Adolescent,60,18,92,84,94,37.3,117,Warning,Not Healthy
+224,Elderly,55,22,121,87,93,36.9,73,Warning,Not Healthy
+225,Infant,66,10,133,84,86,35.5,65,Critical,Not Healthy
+226,Elderly,100,12,113,88,91,36.6,113,Warning,Not Healthy
+227,Adolescent,93,20,95,62,89,37.7,121,Critical,Not Healthy
+228,Elderly,135,10,114,86,99,36.8,86,Warning,Not Healthy
+229,Infant,121,12,139,71,87,38.4,102,Critical,Not Healthy
+230,Elderly,65,12,129,90,88,35.0,138,Critical,Not Healthy
+231,Elderly,93,20,97,89,87,38.8,123,Critical,Not Healthy
+232,Infant,108,24,129,87,86,38.7,150,Critical,Not Healthy
+233,Elderly,75,16,133,78,100,35.9,68,Warning,Not Healthy
+234,Adolescent,99,16,136,61,100,38.1,154,Critical,Not Healthy
+235,Elderly,72,21,103,88,95,37.2,107,Normal,Healthy
+236,Adolescent,86,22,116,77,91,35.1,83,Warning,Not Healthy
+237,Child,111,21,100,65,98,37.6,67,Warning,Not Healthy
+238,Adult,104,30,108,87,85,35.6,137,Critical,Not Healthy
+239,Child,66,10,102,69,89,37.3,60,Critical,Not Healthy
+240,Infant,67,26,116,87,94,38.9,149,Critical,Not Healthy
+241,Elderly,138,16,107,79,90,37.2,68,Warning,Not Healthy
+242,Adult,119,13,105,65,96,36.4,76,Normal,Healthy
+243,Child,64,21,132,77,99,37.5,135,Warning,Not Healthy
+244,Infant,108,22,120,76,85,38.3,134,Critical,Not Healthy
+245,Adolescent,141,16,91,74,88,37.6,67,Critical,Not Healthy
+246,Adolescent,125,23,124,87,88,36.3,137,Critical,Not Healthy
+247,Infant,126,24,100,80,100,36.7,142,Warning,Not Healthy
+248,Infant,65,15,131,67,87,35.9,158,Critical,Not Healthy
+249,Adult,50,20,133,88,96,36.0,95,Warning,Not Healthy
+250,Adult,85,29,138,80,99,35.6,135,Warning,Not Healthy
+251,Elderly,126,23,96,62,98,38.5,149,Critical,Not Healthy
+252,Adolescent,69,15,110,66,89,36.7,99,Critical,Not Healthy
+253,Child,63,12,111,73,85,37.1,88,Critical,Not Healthy
+254,Adult,93,26,117,67,91,36.6,124,Warning,Not Healthy
+255,Adult,63,26,93,83,86,35.4,160,Critical,Not Healthy
+256,Elderly,144,26,121,87,94,36.7,100,Critical,Not Healthy
+257,Child,110,20,93,78,91,37.1,180,Warning,Not Healthy
+258,Elderly,56,14,126,73,100,35.6,63,Warning,Not Healthy
+259,Child,80,14,92,74,100,36.2,74,Normal,Healthy
+260,Adolescent,66,24,108,73,98,36.5,91,Normal,Healthy
+261,Child,67,21,131,71,95,36.5,77,Normal,Healthy
+262,Infant,111,12,136,82,98,37.2,117,Normal,Healthy
+263,Infant,92,17,127,77,96,36.1,82,Normal,Healthy
+264,Adolescent,88,13,94,79,100,36.1,119,Normal,Healthy
+265,Elderly,69,17,104,62,97,36.4,122,Normal,Healthy
+266,Adult,70,13,101,70,95,36.7,110,Normal,Healthy
+267,Infant,69,15,118,84,98,36.1,77,Normal,Healthy
+268,Adolescent,107,24,95,63,99,37.2,121,Normal,Healthy
+269,Adolescent,112,17,106,83,99,36.1,108,Normal,Healthy
+270,Infant,97,15,101,72,99,36.7,122,Normal,Healthy
+271,Adult,64,22,125,80,95,36.1,71,Normal,Healthy
+272,Adult,100,13,90,70,96,36.4,72,Normal,Healthy
+273,Child,120,18,103,64,97,36.5,89,Normal,Healthy
+274,Adult,94,13,130,82,95,37.2,106,Normal,Healthy
+275,Adolescent,96,12,136,63,95,36.8,117,Normal,Healthy
+276,Elderly,82,21,139,60,97,36.4,114,Normal,Healthy
+277,Infant,102,12,130,78,97,36.6,95,Normal,Healthy
+278,Elderly,95,12,90,65,96,37.2,101,Normal,Healthy
+279,Adolescent,81,21,101,75,96,37.2,82,Normal,Healthy
+280,Adult,101,14,106,77,96,37.2,76,Normal,Healthy
+281,Adolescent,60,14,118,64,100,36.4,125,Normal,Healthy
+282,Child,99,19,117,63,97,37.1,111,Normal,Healthy
+283,Adolescent,115,21,134,62,100,36.6,92,Normal,Healthy
+284,Elderly,79,23,138,75,95,37.1,102,Normal,Healthy
+285,Child,102,24,118,69,99,37.1,112,Normal,Healthy
+286,Elderly,94,14,98,89,99,36.6,81,Normal,Healthy
+287,Adolescent,111,21,113,82,100,36.6,108,Normal,Healthy
+288,Elderly,90,16,112,75,100,36.8,95,Normal,Healthy
+289,Elderly,99,15,124,74,95,36.3,121,Normal,Healthy
+290,Infant,95,24,117,62,95,36.1,119,Normal,Healthy
+291,Child,99,16,102,62,97,36.5,101,Normal,Healthy
+292,Infant,91,12,90,65,97,36.3,116,Normal,Healthy
+293,Elderly,62,13,99,86,98,36.2,85,Normal,Healthy
+294,Child,75,18,93,82,96,36.1,108,Normal,Healthy
+295,Child,106,17,103,89,95,36.8,116,Normal,Healthy
+296,Elderly,63,16,94,82,96,37.2,86,Normal,Healthy
+297,Child,109,16,135,76,96,37.2,91,Normal,Healthy
+298,Adolescent,115,14,92,77,100,36.9,92,Normal,Healthy
+299,Infant,86,13,113,86,97,37.0,102,Normal,Healthy
+300,Adolescent,112,22,123,80,97,36.4,98,Normal,Healthy
+301,Infant,98,23,109,63,95,36.3,95,Normal,Healthy
+302,Adolescent,66,16,132,69,98,37.0,111,Normal,Healthy
+303,Infant,99,23,127,74,97,36.6,74,Normal,Healthy
+304,Adolescent,112,24,134,75,95,36.4,84,Normal,Healthy
+305,Adolescent,116,13,100,88,95,37.2,101,Normal,Healthy
+306,Adult,65,16,95,60,95,37.0,79,Normal,Healthy
+307,Adolescent,66,21,129,78,96,36.5,97,Normal,Healthy
+308,Elderly,70,19,128,69,97,36.6,77,Normal,Healthy
+309,Adolescent,87,19,113,66,99,36.1,77,Normal,Healthy
+310,Adult,96,14,132,80,98,37.0,102,Normal,Healthy
+311,Adolescent,102,17,132,60,97,36.4,103,Normal,Healthy
+312,Elderly,93,18,109,88,97,36.7,86,Normal,Healthy
+313,Infant,74,23,125,90,99,36.4,117,Normal,Healthy
+314,Elderly,91,12,127,66,98,36.5,79,Normal,Healthy
+315,Adult,65,23,115,78,96,37.2,79,Normal,Healthy
+316,Elderly,67,19,100,62,95,36.2,72,Normal,Healthy
+317,Adult,72,19,121,69,96,36.3,91,Normal,Healthy
+318,Adolescent,94,21,132,64,99,36.2,109,Normal,Healthy
+319,Child,63,14,102,88,98,36.8,80,Normal,Healthy
+320,Adolescent,84,19,110,63,96,36.7,103,Normal,Healthy
+321,Adult,64,15,98,80,97,36.5,119,Normal,Healthy
+322,Adult,86,15,116,74,95,36.8,98,Normal,Healthy
+323,Child,66,15,102,78,100,36.5,86,Normal,Healthy
+324,Adolescent,81,20,137,73,99,36.5,110,Normal,Healthy
+325,Adult,97,13,132,80,97,36.3,90,Normal,Healthy
+326,Adult,65,20,113,82,95,36.3,79,Normal,Healthy
+327,Adolescent,72,22,96,87,98,37.1,121,Normal,Healthy
+328,Adult,74,15,115,75,96,36.4,102,Normal,Healthy
+329,Child,89,21,100,64,95,36.1,104,Normal,Healthy
+330,Child,94,14,91,71,99,36.9,116,Normal,Healthy
+331,Infant,67,19,92,62,97,37.2,91,Normal,Healthy
+332,Infant,97,17,134,60,99,37.2,84,Normal,Healthy
+333,Elderly,63,17,124,78,95,36.4,107,Normal,Healthy
+334,Infant,61,16,104,72,100,36.3,89,Normal,Healthy
+335,Adult,108,13,94,63,98,36.7,111,Normal,Healthy
+336,Infant,81,13,100,62,96,36.8,115,Normal,Healthy
+337,Adult,89,19,109,76,97,36.4,73,Normal,Healthy
+338,Infant,119,19,104,88,98,36.9,119,Normal,Healthy
+339,Elderly,91,18,95,87,100,36.9,114,Normal,Healthy
+340,Infant,113,17,131,61,96,36.2,92,Normal,Healthy
+341,Adolescent,64,20,99,65,99,36.1,113,Normal,Healthy
+342,Child,114,14,117,76,99,37.1,115,Normal,Healthy
+343,Adolescent,81,19,134,84,95,36.9,116,Normal,Healthy
+344,Adolescent,85,21,123,66,97,36.5,112,Normal,Healthy
+345,Adolescent,68,18,121,85,96,37.0,97,Normal,Healthy
+346,Adult,109,14,124,81,100,37.0,110,Normal,Healthy
+347,Infant,77,13,128,74,96,36.4,80,Normal,Healthy
+348,Infant,119,13,127,88,96,36.3,118,Normal,Healthy
+349,Elderly,69,17,115,64,95,36.1,121,Normal,Healthy
+350,Adolescent,62,24,129,79,96,36.8,119,Normal,Healthy
+351,Infant,74,22,126,67,100,36.6,106,Normal,Healthy
+352,Elderly,71,16,109,90,99,36.5,96,Normal,Healthy
+353,Elderly,107,22,109,62,99,36.9,110,Normal,Healthy
+354,Elderly,62,15,119,88,95,36.7,102,Normal,Healthy
+355,Adult,75,21,124,78,99,37.2,75,Normal,Healthy
+356,Elderly,90,23,131,87,100,36.2,76,Normal,Healthy
+357,Elderly,70,24,108,84,95,37.2,118,Normal,Healthy
+358,Child,98,21,96,66,95,36.9,94,Normal,Healthy
+359,Child,71,13,128,70,95,36.4,101,Normal,Healthy
+360,Adolescent,111,22,132,74,95,36.4,74,Normal,Healthy
+361,Elderly,114,20,125,69,97,37.0,115,Normal,Healthy
+362,Adolescent,66,14,91,77,100,36.4,76,Normal,Healthy
+363,Adult,80,12,107,81,100,36.1,78,Normal,Healthy
+364,Adult,113,12,124,69,99,36.1,112,Normal,Healthy
+365,Infant,119,14,136,88,95,37.0,71,Normal,Healthy
+366,Child,84,16,117,73,97,36.8,119,Normal,Healthy
+367,Elderly,93,24,106,71,98,36.8,77,Normal,Healthy
+368,Elderly,80,23,109,86,100,37.1,97,Normal,Healthy
+369,Adult,91,19,102,70,100,36.9,124,Normal,Healthy
+370,Infant,118,14,139,72,95,36.4,114,Normal,Healthy
+371,Child,106,15,119,76,97,37.2,75,Normal,Healthy
+372,Adult,115,15,110,79,97,37.1,109,Normal,Healthy
+373,Elderly,105,15,118,71,99,36.7,123,Normal,Healthy
+374,Adult,83,23,95,90,98,36.2,112,Normal,Healthy
+375,Child,79,18,123,86,99,37.1,73,Normal,Healthy
+376,Child,119,18,123,72,98,36.4,71,Normal,Healthy
+377,Child,88,12,137,88,96,36.1,108,Normal,Healthy
+378,Child,120,18,125,60,97,36.1,79,Normal,Healthy
+379,Adolescent,81,13,112,85,99,36.8,87,Normal,Healthy
+380,Child,111,16,138,90,96,36.6,72,Normal,Healthy
+381,Adult,83,12,94,63,95,36.5,86,Normal,Healthy
+382,Infant,80,23,116,68,95,37.2,93,Normal,Healthy
+383,Child,74,14,97,63,96,36.5,84,Normal,Healthy
+384,Infant,72,21,107,90,96,37.2,86,Normal,Healthy
+385,Infant,90,13,132,67,99,36.8,123,Normal,Healthy
+386,Adult,117,24,113,61,96,36.8,119,Normal,Healthy
+387,Adolescent,63,23,116,88,99,37.2,77,Normal,Healthy
+388,Infant,85,17,117,78,98,36.9,92,Normal,Healthy
+389,Elderly,63,22,129,74,95,36.3,88,Normal,Healthy
+390,Adult,79,16,90,62,96,36.8,103,Normal,Healthy
+391,Infant,119,23,107,89,98,36.7,118,Normal,Healthy
+392,Elderly,93,13,94,84,99,36.6,80,Normal,Healthy
+393,Child,74,18,124,60,99,36.7,94,Normal,Healthy
+394,Infant,84,19,101,88,100,36.1,71,Normal,Healthy
+395,Elderly,117,21,101,70,100,36.2,75,Normal,Healthy
+396,Infant,66,14,133,65,98,36.2,89,Normal,Healthy
+397,Infant,61,14,118,84,100,36.7,100,Normal,Healthy
+398,Adult,64,20,91,78,98,36.2,83,Normal,Healthy
+399,Child,79,22,111,63,95,37.2,122,Normal,Healthy
+400,Child,84,20,114,65,98,37.2,89,Normal,Healthy
+401,Adult,61,13,128,86,95,37.2,101,Normal,Healthy
+402,Adolescent,69,22,124,64,100,37.1,123,Normal,Healthy
+403,Infant,82,23,131,87,97,36.7,84,Normal,Healthy
+404,Elderly,65,12,115,88,99,36.3,123,Normal,Healthy
+405,Infant,61,14,90,67,100,36.2,115,Normal,Healthy
+406,Adult,74,20,114,61,99,36.3,93,Normal,Healthy
+407,Adult,114,18,129,73,96,36.6,94,Normal,Healthy
+408,Infant,118,18,92,63,99,36.9,79,Normal,Healthy
+409,Infant,100,22,116,83,97,37.0,71,Normal,Healthy
+410,Adolescent,71,18,101,90,99,36.6,81,Normal,Healthy
+411,Infant,75,24,112,78,100,36.6,81,Normal,Healthy
+412,Infant,76,16,125,85,99,37.1,99,Normal,Healthy
+413,Elderly,111,17,124,65,97,36.9,123,Normal,Healthy
+414,Child,98,13,99,78,100,36.8,99,Normal,Healthy
+415,Adult,62,18,125,84,96,37.0,70,Normal,Healthy
+416,Elderly,120,15,122,68,97,36.6,119,Normal,Healthy
+417,Child,64,21,98,76,99,36.4,112,Normal,Healthy
+418,Adolescent,79,24,95,79,100,36.5,109,Normal,Healthy
+419,Elderly,110,23,95,64,98,36.6,88,Normal,Healthy
+420,Adult,109,16,105,79,96,37.2,98,Normal,Healthy
+421,Adolescent,60,18,124,68,98,36.1,106,Normal,Healthy
+422,Adolescent,74,21,140,80,96,36.1,90,Normal,Healthy
+423,Child,65,21,91,67,95,36.6,105,Normal,Healthy
+424,Adult,83,21,130,73,96,36.1,93,Normal,Healthy
+425,Adult,86,21,123,84,100,36.7,85,Normal,Healthy
+426,Adolescent,75,17,117,85,97,36.8,89,Normal,Healthy
+427,Adult,102,19,105,76,97,36.7,118,Normal,Healthy
+428,Child,99,24,91,78,96,36.8,74,Normal,Healthy
+429,Infant,80,19,133,74,98,37.0,120,Normal,Healthy
+430,Adolescent,73,12,103,66,95,36.7,84,Normal,Healthy
+431,Adult,110,22,138,72,95,36.2,81,Normal,Healthy
+432,Adolescent,96,21,119,67,99,37.1,106,Normal,Healthy
+433,Infant,75,18,139,62,97,37.0,125,Normal,Healthy
+434,Adolescent,68,17,131,89,98,36.6,93,Normal,Healthy
+435,Child,112,14,131,82,95,36.5,118,Normal,Healthy
+436,Child,85,15,137,90,100,36.5,111,Normal,Healthy
+437,Infant,117,15,110,84,95,36.4,109,Normal,Healthy
+438,Adolescent,88,23,92,73,96,37.1,116,Normal,Healthy
+439,Child,64,23,99,67,96,37.2,81,Normal,Healthy
+440,Adolescent,70,14,95,87,96,36.3,98,Normal,Healthy
+441,Elderly,103,22,111,79,99,36.9,101,Normal,Healthy
+442,Child,108,17,121,85,95,36.6,72,Normal,Healthy
+443,Adult,103,20,136,80,98,36.1,111,Normal,Healthy
+444,Adult,75,18,115,84,100,37.1,71,Normal,Healthy
+445,Infant,87,16,98,63,100,36.3,125,Normal,Healthy
+446,Child,94,23,128,86,95,36.6,103,Normal,Healthy
+447,Elderly,114,20,110,70,96,37.0,96,Normal,Healthy
+448,Adolescent,86,15,134,77,98,36.1,108,Normal,Healthy
+449,Child,70,19,101,69,98,36.4,86,Normal,Healthy
+450,Elderly,99,22,136,65,99,36.5,113,Normal,Healthy
+451,Adolescent,66,13,109,75,96,36.8,95,Normal,Healthy
+452,Elderly,74,23,101,64,96,36.9,74,Normal,Healthy
+453,Infant,99,24,120,74,100,36.8,76,Normal,Healthy
+454,Adult,99,17,117,77,98,37.2,83,Normal,Healthy
+455,Adolescent,110,23,116,89,100,36.2,92,Normal,Healthy
+456,Infant,71,13,120,83,100,36.6,96,Normal,Healthy
+457,Adolescent,108,18,94,73,100,36.3,99,Normal,Healthy
+458,Infant,110,21,135,76,96,37.0,102,Normal,Healthy
+459,Infant,119,12,101,68,95,37.1,98,Normal,Healthy
+460,Child,113,15,134,84,98,36.6,84,Normal,Healthy
+461,Infant,70,15,116,61,99,37.0,104,Normal,Healthy
+462,Adult,99,24,133,68,97,36.9,113,Normal,Healthy
+463,Child,64,20,91,60,96,37.0,92,Normal,Healthy
+464,Elderly,105,20,120,79,96,36.7,92,Normal,Healthy
+465,Elderly,79,19,123,72,97,36.2,103,Normal,Healthy
+466,Infant,115,17,132,87,95,36.1,75,Normal,Healthy
+467,Elderly,79,21,94,78,99,36.1,87,Normal,Healthy
+468,Adult,64,20,101,87,99,37.1,123,Normal,Healthy
+469,Child,87,19,117,62,96,37.0,99,Normal,Healthy
+470,Infant,80,13,122,62,99,37.0,84,Normal,Healthy
+471,Elderly,60,20,113,89,95,37.2,74,Normal,Healthy
+472,Infant,89,17,100,89,96,36.3,114,Normal,Healthy
+473,Elderly,110,15,103,74,97,36.7,94,Normal,Healthy
+474,Elderly,106,14,118,67,96,36.4,123,Normal,Healthy
+475,Elderly,120,16,119,63,100,36.6,124,Normal,Healthy
+476,Elderly,80,14,116,68,100,36.6,96,Normal,Healthy
+477,Adolescent,119,17,102,75,100,36.1,122,Normal,Healthy
+478,Adult,115,22,114,66,96,36.9,93,Normal,Healthy
+479,Elderly,93,18,129,71,99,36.1,118,Normal,Healthy
+480,Infant,78,17,119,65,98,36.4,80,Normal,Healthy
+481,Adult,93,20,94,72,99,36.7,106,Normal,Healthy
+482,Elderly,96,24,104,66,95,36.9,115,Normal,Healthy
+483,Child,107,16,133,67,99,36.8,124,Normal,Healthy
+484,Adult,93,17,121,80,98,37.0,95,Normal,Healthy
+485,Adult,106,23,106,88,99,36.8,119,Normal,Healthy
+486,Infant,61,21,137,88,95,36.7,84,Normal,Healthy
+487,Elderly,118,22,139,75,95,36.1,110,Normal,Healthy
+488,Adolescent,114,16,126,90,100,36.4,111,Normal,Healthy
+489,Elderly,70,17,98,66,95,36.7,87,Normal,Healthy
+490,Infant,95,23,101,69,100,37.2,77,Normal,Healthy
+491,Adult,100,17,107,74,95,36.8,87,Normal,Healthy
+492,Infant,71,19,97,88,95,36.6,74,Normal,Healthy
+493,Adolescent,65,24,106,72,98,36.1,80,Normal,Healthy
+494,Child,107,19,97,83,96,36.2,80,Normal,Healthy
+495,Adult,111,20,126,90,100,36.5,114,Normal,Healthy
+496,Elderly,61,18,126,79,99,36.7,80,Normal,Healthy
+497,Adult,99,20,139,90,100,36.7,78,Normal,Healthy
+498,Infant,115,21,117,74,97,36.5,112,Normal,Healthy
+499,Child,72,20,135,70,99,36.5,72,Normal,Healthy
+500,Infant,81,18,136,68,98,37.1,100,Normal,Healthy
