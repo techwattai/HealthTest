@@ -6,6 +6,11 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str
     OPENAI_MODEL: str
     DEPLOYMENT: str
+    MAIL_USERNAME: str | None = None
+    MAIL_PASSWORD: str | None = None
+    MAIL_FROM: str | None = None
+    MAIL_PORT: int | None = 465
+    MAIL_SERVER: str | None = None
 
 
     class Config:
