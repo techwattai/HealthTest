@@ -1,4 +1,4 @@
-from Endpoints import body_vitals, ai_appointments, ai_diagnosis, ai_summarization, ai_icd10, ai_drug_interaction, ai_guest_booking, ai_health_analysis, ai_vitals_anomaly, ai_adherence, ai_lab_interpretation, ai_readmission, ai_prescription, ai_no_show, ai_imaging
+from Endpoints import body_vitals, ai_appointments, ai_diagnosis, ai_summarization, ai_icd10, ai_drug_interaction, ai_guest_booking, ai_health_analysis, ai_vitals_anomaly, ai_adherence, ai_lab_interpretation, ai_readmission, ai_prescription, ai_no_show, ai_imaging, email_service
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware 
 
@@ -35,3 +35,4 @@ app.include_router(ai_readmission.router)
 app.include_router(ai_prescription.router)
 app.include_router(ai_no_show.router)
 # app.include_router(ai_imaging.router)
+app.include_router(email_service.router)
