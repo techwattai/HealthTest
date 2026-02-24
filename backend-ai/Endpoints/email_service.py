@@ -25,8 +25,12 @@ def send_email_background(to_emails: Union[str, List[str]], subject: str, body: 
     smtp_server = settings.MAIL_SERVER
     smtp_port = settings.MAIL_PORT or 465
     
+    print(f"Attempting to send email to {to_emails}")
+    print(f"SMTP Server: {smtp_server}:{smtp_port}")
+    print(f"Sender: {sender_email}")
+    
     if not sender_email or not sender_password or not smtp_server:
-        print("Error: Email credentials missing in configurations.")
+        print("Error: Email credentials missing in configurations. Please check MAIL_USERNAME, MAIL_PASSWORD, MAIL_SERVER in environment variables.")
         return
 
     if isinstance(to_emails, str):
@@ -42,6 +46,7 @@ def send_email_background(to_emails: Union[str, List[str]], subject: str, body: 
     msg.attach(MIMEText(body, 'plain'))
 
     try:
+        print("Connecting to SMTP server...")
         # Connect to the server
         if smtp_port == 465:
             server = smtplib.SMTP_SSL(smtp_server, smtp_port)
@@ -49,13 +54,17 @@ def send_email_background(to_emails: Union[str, List[str]], subject: str, body: 
             server = smtplib.SMTP(smtp_server, smtp_port)
             server.starttls()
             
+        print("Logging in...")
         server.login(sender_email, sender_password)
         # Send email
+        print("Sending mail...")
         server.sendmail(sender_email, to_emails, msg.as_string())
         server.quit()
         print(f"Email sent successfully to: {to_emails}")
     except Exception as e:
         print(f"Failed to send email: {e}")
+        import traceback
+        traceback.print_exc()
 
 @router.post("/send-email", tags=["Email Service"])
 async def send_email_endpoint(email_request: EmailRequest, background_tasks: BackgroundTasks):

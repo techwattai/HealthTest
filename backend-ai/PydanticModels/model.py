@@ -414,3 +414,138 @@ class ImagingAnalysis(BaseModel):
     comparison: Optional[str] = None  # If prior images available
     criticalFindings: bool
     radiologistReviewRequired: bool
+
+# --- Clinical Documentation & Tracking (AI Endpoints Specification) ---
+# Module: chronic_disease | pediatric | mental_health | research | public_health
+# All outputs include: ai_version, generated_at, status (pending_clinician_review)
+
+class ClinicalNoteSummarizeInput(BaseModel):
+    patient_id: str
+    visit_date: str  # ISO 8601
+    raw_notes: str
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+
+class ClinicalNoteSummarizeOutput(BaseModel):
+    summary_note: str
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class TherapySessionNoteInput(BaseModel):
+    patient_id: str
+    session_notes: str
+    session_date: str
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+
+class StructuredTherapyNote(BaseModel):
+    mood_score: int  # e.g. 1-10 or scale-based
+    symptoms: List[str]
+    recommendations: List[str]
+
+class TherapySessionNoteOutput(BaseModel):
+    structured_note: StructuredTherapyNote
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class ClinicalSummaryTrendsInput(BaseModel):
+    patient_id: str
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+    vitals: dict  # e.g. {"weight": [12, 12.5, 13], "height": [85, 86, 87]}
+    labs: dict   # e.g. {"hb": [11, 11.5, 12]}
+
+class ClinicalSummaryTrendsOutput(BaseModel):
+    trend_summary: str
+    alerts: List[str]
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class RiskDetectionInput(BaseModel):
+    patient_id: str
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+    vitals: dict  # e.g. {"bp": [140, 145, 150]}
+    labs: dict    # e.g. {"hba1c": [7.2, 7.5, 7.8]}
+    med_adherence: List[bool]
+
+class RiskDetectionOutput(BaseModel):
+    risk_level: Literal["low", "moderate", "high"]
+    alerts: List[str]
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class MentalHealthRiskInput(BaseModel):
+    patient_id: str
+    module: Literal["mental_health"]
+    mood_logs: Optional[List[str]] = None
+    therapy_notes: Optional[str] = None
+    symptom_scores: Optional[dict] = None  # e.g. {"PHQ-9": 12, "GAD-7": 8}
+
+class MentalHealthRiskOutput(BaseModel):
+    risk_level: Literal["low", "moderate", "high", "crisis"]
+    alerts: List[str]
+    recommendations: List[str]
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class TrendAnalysisInput(BaseModel):
+    patient_id: str
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+    vitals: Optional[dict] = None
+    labs: Optional[dict] = None
+    outcomes: Optional[List[str]] = None
+    reference_ranges: Optional[dict] = None  # e.g. {"bp": {"min": 90, "max": 120, "unit": "mmHg"}}
+
+class TrendAnalysisOutput(BaseModel):
+    trend_summary: str
+    reference_ranges_used: Optional[dict] = None
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class PopulationInsightsInput(BaseModel):
+    study_id: Optional[str] = None
+    patient_ids: Optional[List[str]] = None  # anonymized IDs only
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+    aggregate_metrics: List[str]  # e.g. ["hba1c_mean", "bp_trend"]
+
+class PopulationInsightsOutput(BaseModel):
+    insights: dict  # anonymized aggregates
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class FormFillInput(BaseModel):
+    patient_id: str
+    form_type: Literal["insurance_claim", "research_consent", "hospital_form"]
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+    source_data: dict  # Key-value pairs from EHR/manual to populate form
+
+class FormFillOutput(BaseModel):
+    filled_fields: dict
+    validation_errors: List[str]
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class ICDCodingInput(BaseModel):
+    patient_id: str
+    module: Literal["chronic_disease", "pediatric", "mental_health", "research", "public_health"]
+    notes: str  # Clinical notes for ICD-10/ICD-11 code suggestion
+
+class ICDCodingOutput(BaseModel):
+    suggestions: List[ICD10Suggestion]
+    ai_version: str
+    generated_at: str
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"
+
+class AdherencePredictionSpecOutput(BaseModel):
+    adherenceProbability: int = 0
+    riskLevel: Literal["low", "moderate", "high", "very_high"] = "moderate"
+    riskFactors: List[RiskFactor] = []
+    interventions: List[Intervention] = []
+    ai_version: str = ""
+    generated_at: str = ""
+    status: Literal["pending_clinician_review", "approved", "approved_modified"] = "pending_clinician_review"

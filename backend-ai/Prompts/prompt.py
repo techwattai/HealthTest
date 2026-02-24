@@ -861,3 +861,59 @@ imaging_analysis_prompt = PromptTemplate.from_template(
     Return your response as a JSON object matching the imaging analysis schema.
     """
 )
+
+# --- Clinical Documentation & Tracking (AI Endpoints Specification) ---
+clinical_note_summarize_prompt = PromptTemplate.from_template(
+    """Summarize raw clinical notes into structured documentation. Module: {module}.
+Patient ID: {patient_id}, Visit: {visit_date}.
+Raw notes: {raw_notes}
+Return ONLY valid JSON: {{"summary_note": "string"}}. No markdown."""
+)
+
+therapy_session_note_prompt = PromptTemplate.from_template(
+    """Structure mental health therapy session notes. Module: {module}.
+Patient ID: {patient_id}, Session: {session_date}.
+Session notes: {session_notes}
+Use hospital-approved scales (PHQ-9, GAD-7). Return ONLY valid JSON:
+{{"structured_note": {{"mood_score": int 1-10, "symptoms": ["string"], "recommendations": ["string"]}}}}. No markdown."""
+)
+
+clinical_summary_trends_prompt = PromptTemplate.from_template(
+    """Generate longitudinal summary for module: {module}. Patient ID: {patient_id}.
+Vitals: {vitals}. Labs: {labs}.
+Flag abnormal trends per pediatric/geriatric charts. Return ONLY valid JSON:
+{{"trend_summary": "string", "alerts": ["string"]}}. No markdown."""
+)
+
+risk_detection_prompt = PromptTemplate.from_template(
+    """Detect high-risk patient. Module: {module}. Patient ID: {patient_id}.
+Vitals: {vitals}. Labs: {labs}. Med adherence (true/false): {med_adherence}.
+Use hospital clinical protocols. Return ONLY valid JSON:
+{{"risk_level": "low|moderate|high", "alerts": ["string"]}}. No markdown."""
+)
+
+mental_health_risk_prompt = PromptTemplate.from_template(
+    """Assess mental health relapse/crisis risk. Patient ID: {patient_id}.
+Mood logs: {mood_logs}. Therapy notes: {therapy_notes}. Symptom scores: {symptom_scores}.
+Follow suicide risk assessment scales. Return ONLY valid JSON:
+{{"risk_level": "low|moderate|high|crisis", "alerts": ["string"], "recommendations": ["string"]}}. No markdown."""
+)
+
+trend_analysis_prompt = PromptTemplate.from_template(
+    """Summarize vitals/labs/outcomes over time. Module: {module}. Patient ID: {patient_id}.
+Vitals: {vitals}. Labs: {labs}. Outcomes: {outcomes}. Reference ranges: {reference_ranges}.
+Include reference ranges and units. Return ONLY valid JSON:
+{{"trend_summary": "string", "reference_ranges_used": {{}}}}. No markdown."""
+)
+
+population_insights_prompt = PromptTemplate.from_template(
+    """Aggregate anonymized patient data for research/public health. Module: {module}.
+Metrics: {aggregate_metrics}. Do NOT include PHI. Return ONLY valid JSON:
+{{"insights": {{"metric": value or summary}}}}. No markdown."""
+)
+
+form_fill_prompt = PromptTemplate.from_template(
+    """Auto-populate {form_type} from source data. Module: {module}. Patient ID: {patient_id}.
+Source: {source_data}. Validate against hospital form schema. Return ONLY valid JSON:
+{{"filled_fields": {{}}, "validation_errors": ["string"]}}. No markdown."""
+)

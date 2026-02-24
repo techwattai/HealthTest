@@ -6,7 +6,8 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str
     OPENAI_MODEL: str
     DEPLOYMENT: str
-    MAIL_USERNAME: str | None = None
+    DEPLOYMENT: str
+    MAIL_USERNAME: str | None = None # Mail username
     MAIL_PASSWORD: str | None = None
     MAIL_FROM: str | None = None
     MAIL_PORT: int | None = 465
@@ -19,6 +20,7 @@ class Settings(BaseSettings):
         case_sensitive = True
 
 settings = Settings()
+AI_VERSION = "v2.0.0"  # Clinical Documentation & Tracking module
 # print(settings.OPENAI_API_KEY  )  # Test to ensure settings are loaded correctly
 # print(settings.OPENAI_MODEL )  # Test to ensure settings are loaded correctly
 
